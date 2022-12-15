@@ -11,7 +11,7 @@ export default function Toggle() {
   // ========================================================
   // Solution with provided handleClick helper function
   function handleClick() {
-    setToggle(!toggle);
+    setToggle((prev) => !prev);
   }
 
   return <button onClick={handleClick}>{toggle ? "ON" : "OFF"}</button>;
